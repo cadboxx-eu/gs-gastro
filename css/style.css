@@ -9,13 +9,16 @@
 
 /*  vystredeni textu na strance */
 .middle-container {
-	margin: 0 20px;
+	margin: 0 1.25rem;
 }
 
-/*fonty, stanoveni zakladni velikosti, ostatni v rem */
+html {
+	font-size: 16px; 
+}
+
 body {
 	font-family: Arial, sans-serif;
-	font-size: 14px;
+	font-size: 0.9rem;
 }
 
 h2 {
@@ -27,7 +30,7 @@ h2 {
 	color: RGB(38, 101, 148);
 }
 
-/* zvyrazneni highlight textu */
+/* zvyrazneni duleziteho textu */
 strong {
 	font-weight: bold;
 	color: RGB(36, 178, 230);
@@ -47,7 +50,7 @@ a:hover {
  HEADER
 *************************************************************************************/
 
-/* header obsahuje: 
+/* <header> obsahuje: 
 	.theme-pic  /obrazek  
 	.top-banner  /bily pruh s logem a navigaci  
 		.logo  /logo s img a span
@@ -60,18 +63,18 @@ header {
 	position: relative;
 }
 
-/* obrazek na vrchu stranky, vlozen jako background kvuli orezu (responsive - zvetsit) */
+/* obrazek na vrchu stranky, vlozen jako background kvuli orezu */
+
 .theme-pic {
 	width: 100%; 
-	height: 280px; 
-	background: url(../pic/health-pic.jpg) no-repeat bottom / cover;
+	height: 17.5rem; 
+	background: url(../pic/health-pic.jpg) no-repeat center / cover;
 }
 
-.top-banner {
+.top-banner { /* pruh s logem a navigaci */
 	width: 100%; 
-	height: 5rem;
-	background: rgba(255, 255, 255, 0.8); 
-	padding-top: 15px; 
+	background: rgba(255, 255, 255, 0.85); 
+	padding-top: 0.9375rem; 
 	position: absolute;
 	top: 0;
 	color: #235779;
@@ -80,24 +83,23 @@ header {
 
 /* ------------------ Logo ------------------ */
 
-.logo img { /* obrazek */
+.logo img { /* logo obrazek */
 	width: 2.5rem; 
 }
 
-.logo span { /* text */
+.logo span { /* logo text */
 	font-size: 1.2rem; 
 	font-weight: bold;
 	color: #235779; 
 	position: relative; /* umisteni vuci obrazku v logu */
 	bottom: 0.8rem;
-	left: 2px;
+	left: 0.125px;
 }
 
 
 /* ------------------ Navigation ------------------ */
 
-/* navigace pomoci inline-block/justify rozmistena po cele strankce - resp. nutno zmenit */
-
+/* navigace pomoci inline-block/justify rozmistena po cele strankce */
 nav {
 	color: rgb(35, 87, 121);
 	font-size: 0.8rem;
@@ -106,6 +108,7 @@ nav {
 nav ul {
 	text-align: justify; /* horizontalni distribuce mezi elementy */
 	margin-top: 0.6rem;
+	margin-bottom: -0.2rem;
 }
 
 nav li {
@@ -125,10 +128,10 @@ nav ul:after {
 .page-title {
 	background-color: rgba(3, 43, 94, 0.85);
 	width: 100%; 
-	position: absolute;
+	position: absolute; /* pozicovani na dno obrazku */
 	bottom: 0; 
 	text-align: center;
-	padding: 8px 0;
+	padding: 0.5rem 0;
 	color: rgb(255, 255, 255);
 }
 
@@ -145,7 +148,7 @@ h1 {
 }
 
 .page-title li:first-child {
-	border-right: 1px solid rgb(255, 255, 255);
+	border-right: 1px solid rgb(255, 255, 255); /* oddelovac */
 }
 
 
@@ -160,24 +163,24 @@ h2 {
 
 .welcome, 
 .business-hours {
-	background-color: RGB(235, 245, 255);
+	background-color: RGB(235, 245, 255); /* svetle modre pozadi */
 }
 
 .col, 
 .news {
-	padding: 15px 0 15px;
-	line-height: 1.3;
+	padding: 0.9375rem 0 0.9375rem;
+	line-height: 1.3; /* rozestupy mezi jednotlivymi aktualitami */
 }
 
 p {
-	margin-bottom: 5px;
+	margin-bottom: 0.3125rem;
 }
 
 /* ------------------ Generovani kapek ------------------ */
 
 .drop-pic {
-	width: 25px;
-	height: 25px;
+	width: 1.5625rem;
+	height: 1.5625rem;
 	border-radius: 50% 0 50% 50%;
 	transform: rotate(270deg);
 	position: absolute;
@@ -224,35 +227,42 @@ p {
 
 .news p {
 	position: relative;
-	top: -5px;
+	top: -0.3125rem;
 }
 
 .news-2 p, 
 .news-4 p {
-	padding-left: 30px; 
+	padding-left: 1.875rem; 
 }
 
 .news-1 p, 
 .news-3 p {
-	padding-right: 30px; 
+	padding-right: 1.875rem; 
 }
 
 .news-4 ul {
-	padding-left: 30px;
+	padding-left: 1.875rem;
 	white-space: nowrap;
 }
+
+/* odsazeni ordinacnich hodin v aktualitach */
+
+.news-bus-hours li {
+	margin-bottom: 0.5rem;
+}
+
 
 /* ------------------ Tabulka business hours ------------------ */
 
 thead {
 	text-align: left;
-	font-weight: bolder;
+	font-weight: bold;
 	color: RGB(48, 179, 228);
 }
 
 thead th {
-	padding-bottom: 15px;
-	padding-top: 20px;
+	padding-bottom: 0.9375rem;
+	padding-top: 1.25rem;
 }
 
 td {
@@ -270,7 +280,7 @@ td {
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
-	border-radius: 4px 4px 0px 0px;
+	border-radius: 0.25rem 0.25rem 0 0;
 	padding-top: 0.45rem;
 	transform: rotate(-90deg);
 	position: absolute;
@@ -291,7 +301,7 @@ td {
 	background-color: RGB(8, 78, 140);
 	width: 100%;
 	text-align: center;
-	padding-bottom: 15px;
+	padding-bottom: 0.9375rem;
 }
 
 .service-nav a:link, 
@@ -303,23 +313,23 @@ td {
 
 .icon {
 	width: 100%;
-	max-width: 100px;
+	max-width: 80px; /* maximalni velikost ikony */
 	margin-bottom: 8px;
 }
 
 .caption {
 	font-size: 0.8rem;
-	font-size: 3.2vw;
+	font-size: 3.2vw; /* osetreni vystredeni titulku pri malem monitoru */
 }
 
 .service-icon {
-	float: left;
+	float: left;	/* float po 3 ikonach */
 	width: 25%;
-	margin: 20px 4.16666% 0;
+	margin: 1.25rem 4.16666% 0;
 }
 
-.service-icon:nth-child(4) {
-	margin-left: 20.5%;
+.service-icon:nth-child(4) { 
+	margin-left: 20.5%;	/* vystredeni poslednich 2 ikon */
 	
 }
 
@@ -330,7 +340,7 @@ td {
 .copyright {
 	background-color: RGB(3, 43, 94);
 	width: 100%;
-	padding: 12px 0 8px; 
+	padding: 0.75rem 0 0.5rem; 
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-size: 0.7rem;
@@ -359,48 +369,188 @@ td {
  MEDIA QUERIES
 ********************************************************************/
 
-@media (max-width: 400px) { /* reseni zalamovani textu v aktualitach u konzultacnich hodin */
-	.news-4 ul {
-		font-size: 0.8rem;
-		font-size: 3.5vw;
+@media (max-width: 300px) {
+	
+	html {
+		font-size: 12px;
+	}
+
+	body {
+
+		min-width: 250px; /* zamezeni rozbiti layoutu pri miniaturnich monitorech */
 	}
 }
 
-/* header obsahuje: 
-	.theme-pic  /obrazek  
-	.top-banner  /bily pruh s logem a navigaci  
-		.logo  /logo s img a span
-		<nav>  /navigace s ul a li 
-	.page-title  /modry pruh s nazvem stranky 
-		h1  /nazev
-		ul,li  /jmena lekarek */
+@media (min-width: 500px) {
+
+	html {
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 600px) {
+
+	.middle-container { /* zvetseni okraju kolem obsahu */
+		width: 85%; 
+		margin: 0 auto;
+	}
+
+	.theme-pic {
+		height: 21.875rem; /* uprava vysky uvodniho obrazku */
+	}
+	
+	/* ------------------------------------------------------------------------------------------------ */
+	/* Hlavni navigace floatuje v pravo */
+
+	nav {
+		width: 50%; 
+		max-width: 19rem; /* uprava roztazeni navigace, aby nebyla rozplizla */
+		position: absolute;
+		top: 0.75rem;
+		right: 7.5%; 
+	}
+
+	.top-banner {
+		height: 3.6rem;  /* vyska horniho banneru */
+	}
+
+	.caption {
+		font-size: 0.8rem; /* oprava zvetsovani titulku pri vetsim monitoru */
+	}
+
+}
 
 @media (min-width: 750px) {
 
-	nav {
-	font-size: 0.8rem;
-	float: right;
-	width: 50%; 
+	/* ------------------------------------------------------------------------------------------------ */
+	/* Nadpis stranky, absolutni pozicovani */
+
+	.page-title {  
+		text-align: left;
+		height: 3.421rem; /* vyska nadpisoveho banneru */
 	}
 
-	nav ul {
-		text-align: justify; /* horizontalni distribuce mezi elementy */
-		margin-top: 0;
+	.page-title h1 {
+		text-align: left;	
+		position: absolute;
+		left: 7.5%; 
+		bottom: 1.05rem; /* nadpis */
 	}
 
-	nav li {
-		display: inline-block;	
+	.page-title ul {
+		position: absolute;
+		right: 7.5%; 
+		bottom: 0.68rem; /* jmena lekarek */
 	}
 
-	nav ul:after {
-		content: ""; 
+	.page-title ul li {
+		display: block;
+	}
+
+	.page-title ul li:first-child { /* odstraneni oddelovace */
+		border: none;
+	}
+
+	/* ------------------------------------------------------------------------------------------------ */
+	/* Main content, 2 sloupce */
+
+	/* floating do 2 sloupcu, uvitani a aktuality */
+	.welcome {
+		float: left;
+		width: 30%;
+		background-color: rgb(255, 255, 255); /* bile pozadi*/
+		padding: 0 1rem 0 0; 
+		margin: 0.9375rem 0 0.9375rem 0; 
+	}
+
+	.news-all {
+		float: right;
+		width: 70%;
+		padding: 0 0 0 1rem; 
+		border-left: 1px solid RGB(204, 204, 204); /* oddelovaci cara */
+		margin: 0.9375rem 0 0.9375rem 0;
+	}
+
+	.business-hours {
+		clear: both;
+	}
+
+	/* opraveni zarovnani na strance */
+	.two-col-container {
+		width: 85%; 
+		margin: 0 auto;
+	}
+
+	.welcome .middle-container, 
+	.news-all .middle-container {
+		margin: 0;
 		width: 100%; 
-		display: inline-block;
+	}
+
+
+	/* ------------------------------------------------------------------------------------------------ */
+	/* Ikony se sluzbami - roztahnuti do jednoho pruhu */
+
+	.service-icon {
+		width: 15%; 
+		margin: 1.25rem 2.5% 0; 
+	}
+
+	.service-icon:nth-child(4) { 
+		margin: 1.25rem 2.5% 0; 	/* korekce z layoutu o 3 ikonach */
+	}
+
+	.icon {
+		max-width: 100px;
+	}
+
+	
+
+	/* Ordinacni hodiny v ramci sekce do 2 sloupcu */
+	.jana {
+		float: left;
+		width: 45%;
+	}
+
+	.jirina {
+		float: right;
+		width: 45%;
+	}
+
+	.den {
+		width: 4.5rem;
 	}
 }
 
+@media (min-width: 1100px) {
 
+	html {
+		font-size: 21px;
+	}
 
+	.middle-container {
+		border: 1px solid red;
+		width: 80%; 
+		max-width: 1200px;
+	}	
+
+	.theme-pic {
+		height: 25rem; /* uprava vysky uvodniho obrazku */
+	}
+
+	nav {
+		right: 10%; /* oprava okraju */
+	}
+
+	.page-title h1 {
+		left: 10%;
+	}
+
+	.page-title ul {
+		right: 10%; 
+	}
+
+}
 
 
 
