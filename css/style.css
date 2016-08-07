@@ -1,0 +1,408 @@
+/************************************************************************************ 
+ GENERAL
+*************************************************************************************/
+
+
+* {
+	box-sizing: border-box;
+}
+
+/*  vystredeni textu na strance */
+.middle-container {
+	margin: 0 20px;
+}
+
+/*fonty, stanoveni zakladni velikosti, ostatni v rem */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+h2 {
+	font-family: Georgia, serif;
+	font-size: 1.25rem;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	color: RGB(38, 101, 148);
+}
+
+/* zvyrazneni highlight textu */
+strong {
+	font-weight: bold;
+	color: RGB(36, 178, 230);
+}
+
+/* obecne odkazy v textu, sede, s podtrzenim */
+a:link, 
+a:visited {
+	color: RGB(120, 120, 120);
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/************************************************************************************ 
+ HEADER
+*************************************************************************************/
+
+/* header obsahuje: 
+	.theme-pic  /obrazek  
+	.top-banner  /bily pruh s logem a navigaci  
+		.logo  /logo s img a span
+		<nav>  /navigace s ul a li 
+	.page-title  /modry pruh s nazvem stranky 
+		h1  /nazev
+		ul,li  /jmena lekarek */
+
+header {
+	position: relative;
+}
+
+/* obrazek na vrchu stranky, vlozen jako background kvuli orezu (responsive - zvetsit) */
+.theme-pic {
+	width: 100%; 
+	height: 280px; 
+	background: url(../pic/health-pic.jpg) no-repeat bottom / cover;
+}
+
+.top-banner {
+	width: 100%; 
+	height: 5rem;
+	background: rgba(255, 255, 255, 0.8); 
+	padding-top: 15px; 
+	position: absolute;
+	top: 0;
+	color: #235779;
+}
+
+
+/* ------------------ Logo ------------------ */
+
+.logo img { /* obrazek */
+	width: 2.5rem; 
+}
+
+.logo span { /* text */
+	font-size: 1.2rem; 
+	font-weight: bold;
+	color: #235779; 
+	position: relative; /* umisteni vuci obrazku v logu */
+	bottom: 0.8rem;
+	left: 2px;
+}
+
+
+/* ------------------ Navigation ------------------ */
+
+/* navigace pomoci inline-block/justify rozmistena po cele strankce - resp. nutno zmenit */
+
+nav {
+	color: rgb(35, 87, 121);
+	font-size: 0.8rem;
+}
+
+nav ul {
+	text-align: justify; /* horizontalni distribuce mezi elementy */
+	margin-top: 0.6rem;
+}
+
+nav li {
+	display: inline-block;	
+}
+
+nav ul:after {
+	content: ""; 
+	width: 100%; 
+	display: inline-block;
+}
+
+
+
+/* ------------------ Page title ------------------ */
+
+.page-title {
+	background-color: rgba(3, 43, 94, 0.85);
+	width: 100%; 
+	position: absolute;
+	bottom: 0; 
+	text-align: center;
+	padding: 8px 0;
+	color: rgb(255, 255, 255);
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.2rem; 
+}
+
+.page-title li {
+	display: inline-block;
+	margin: 10px 0 2px;
+	padding: 0 10px;
+	font-size: 0.7rem;
+}
+
+.page-title li:first-child {
+	border-right: 1px solid rgb(255, 255, 255);
+}
+
+
+
+/************************************************************************************ 
+ MAIN CONTENT
+*************************************************************************************/
+
+h2 {
+	margin-bottom: 0.8rem;
+}
+
+.welcome, 
+.business-hours {
+	background-color: RGB(235, 245, 255);
+}
+
+.col, 
+.news {
+	padding: 15px 0 15px;
+	line-height: 1.3;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+/* ------------------ Generovani kapek ------------------ */
+
+.drop-pic {
+	width: 25px;
+	height: 25px;
+	border-radius: 50% 0 50% 50%;
+	transform: rotate(270deg);
+	position: absolute;
+	top: -1px;
+}
+
+.news-1 .drop-pic, 
+.news-3 .drop-pic {
+	transform: rotate(0deg);
+	right: 0;
+}
+
+
+/* ------------------ Nastaveni rozdilne barvy u car s kapkami ------------------ */
+
+.news-1, 
+.news-4 {
+	border-top: 2px solid RGB(156, 209, 237);
+}
+.news-1 .drop-pic, 
+.news-4 .drop-pic {
+	background-color: RGB(156, 209, 237);
+}
+
+.news-2 {
+	border-top: 2px solid RGB(35, 87, 121);
+}
+.news-2 .drop-pic {
+	background-color: RGB(35, 87, 121);
+}
+
+.news-3 {
+	border-top: 2px solid RGB(155, 158, 153);
+}
+.news-3 .drop-pic {
+	background-color: RGB(155, 158, 153);
+}
+
+/* ------------------ Odstavce ------------------ */
+
+.news {
+	position: relative;
+}
+
+.news p {
+	position: relative;
+	top: -5px;
+}
+
+.news-2 p, 
+.news-4 p {
+	padding-left: 30px; 
+}
+
+.news-1 p, 
+.news-3 p {
+	padding-right: 30px; 
+}
+
+.news-4 ul {
+	padding-left: 30px;
+	white-space: nowrap;
+}
+
+/* ------------------ Tabulka business hours ------------------ */
+
+thead {
+	text-align: left;
+	font-weight: bolder;
+	color: RGB(48, 179, 228);
+}
+
+thead th {
+	padding-bottom: 15px;
+	padding-top: 20px;
+}
+
+td {
+	height: 1.5rem;
+	width: 6rem; 
+}
+
+
+/* ------------------ Tlacitko objednat ------------------ */
+
+.button-objednat {
+	background-color: RGB(29, 174, 236);
+	width: 6rem;
+	height: 2rem;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	border-radius: 4px 4px 0px 0px;
+	padding-top: 0.45rem;
+	transform: rotate(-90deg);
+	position: absolute;
+	right: -2rem;
+	top: 50%;
+}
+
+.business-hours {
+	position: relative;
+}
+
+
+/************************************************************************************ 
+ IKONY NABIZIME
+*************************************************************************************/
+
+.service-nav {
+	background-color: RGB(8, 78, 140);
+	width: 100%;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.service-nav a:link, 
+.service-nav a:visited {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		font-weight: bold;
+}
+
+.icon {
+	width: 100%;
+	max-width: 100px;
+	margin-bottom: 8px;
+}
+
+.caption {
+	font-size: 0.8rem;
+	font-size: 3.2vw;
+}
+
+.service-icon {
+	float: left;
+	width: 25%;
+	margin: 20px 4.16666% 0;
+}
+
+.service-icon:nth-child(4) {
+	margin-left: 20.5%;
+	
+}
+
+/************************************************************************************ 
+ FOOTER (COPYRIGHT)
+*************************************************************************************/
+
+.copyright {
+	background-color: RGB(3, 43, 94);
+	width: 100%;
+	padding: 12px 0 8px; 
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 0.7rem;
+	letter-spacing: 0.04rem;
+}
+
+.copyright a:link, 
+.copyright a:visited {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+
+/******************************************************************* 
+ CLEARFIX
+********************************************************************/
+
+.clearfix::after {
+	content: ""; 
+	display: table;
+	clear: both;
+}
+
+
+/******************************************************************* 
+ MEDIA QUERIES
+********************************************************************/
+
+@media (max-width: 400px) { /* reseni zalamovani textu v aktualitach u konzultacnich hodin */
+	.news-4 ul {
+		font-size: 0.8rem;
+		font-size: 3.5vw;
+	}
+}
+
+/* header obsahuje: 
+	.theme-pic  /obrazek  
+	.top-banner  /bily pruh s logem a navigaci  
+		.logo  /logo s img a span
+		<nav>  /navigace s ul a li 
+	.page-title  /modry pruh s nazvem stranky 
+		h1  /nazev
+		ul,li  /jmena lekarek */
+
+@media (min-width: 750px) {
+
+	nav {
+	font-size: 0.8rem;
+	float: right;
+	width: 50%; 
+	}
+
+	nav ul {
+		text-align: justify; /* horizontalni distribuce mezi elementy */
+		margin-top: 0;
+	}
+
+	nav li {
+		display: inline-block;	
+	}
+
+	nav ul:after {
+		content: ""; 
+		width: 100%; 
+		display: inline-block;
+	}
+}
+
+
+
+
+
+
+
+
