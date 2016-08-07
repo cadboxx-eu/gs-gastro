@@ -522,35 +522,7 @@ td {
 	}
 }
 
-@media (min-width: 1100px) {
 
-	html {
-		font-size: 21px;
-	}
-
-	.middle-container {
-		border: 1px solid red;
-		width: 80%; 
-		max-width: 1200px;
-	}	
-
-	.theme-pic {
-		height: 25rem; /* uprava vysky uvodniho obrazku */
-	}
-
-	nav {
-		right: 10%; /* oprava okraju */
-	}
-
-	.page-title h1 {
-		left: 10%;
-	}
-
-	.page-title ul {
-		right: 10%; 
-	}
-
-}
 
 
 
