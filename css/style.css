@@ -78,6 +78,7 @@ header {
 	position: absolute;
 	top: 0;
 	color: #235779;
+	box-shadow: 0 2px 4px rgba(100, 100, 100, 0.2);
 }
 
 
@@ -613,12 +614,17 @@ td {
 		width: 85%; 
 		margin: 0 auto;
 	}
+
+	.business-hours h2 {
+		margin-bottom: -0.4rem; /* zarovnani prvniho radku tabulky s ostatnim contentem */
+	}
 }
 
 @media (min-width: 1400px) {
 	body {
 		max-width: 1400px; 
 		margin: 0 auto;
+		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.2); 
 	}
 }
 
