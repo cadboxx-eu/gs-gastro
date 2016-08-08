@@ -1,3 +1,17 @@
+/* Temporary */
+
+.construction {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 150px 0;
+}
+
+.construction p {
+	margin: 20px 0;
+}
+
+
 /************************************************************************************ 
  GENERAL
 *************************************************************************************/
@@ -45,6 +59,10 @@ a:hover {
 	text-decoration: none;
 }
 
+/* sticking footer */
+.stick-foot {
+	min-height: calc(100vh - 216.19px);
+}
 
 /************************************************************************************ 
  HEADER
