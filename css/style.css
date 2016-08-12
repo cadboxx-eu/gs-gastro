@@ -401,6 +401,55 @@ td {
 }
 
 
+
+/******************************************************************* 
+ PAGE O NAS
+********************************************************************/
+.zivotopis {
+	margin-bottom: 1rem; 
+	margin-top: 2rem;
+}
+.tab-zivotopis {
+	width: 100%; 
+	table-layout: fixed;
+	margin-bottom: 0.5rem;
+}
+
+
+.tab-zivotopis tr:nth-child(even) {
+	background: rgb(235, 245, 255); /* vybarveni sudych radku */
+}
+
+.tab-zivotopis td {
+	padding: 0.3rem; 
+}
+
+.tab-zivotopis td:first-child {
+	width: 40px; 
+}
+
+.tab-zivotopis li {
+	padding: 0.3rem 0.3rem 0.3rem 1.5rem; 
+	border-top: 1px solid rgb(235, 245, 255);
+}
+
+.zivotopis h2 {
+	margin: 0 0 1rem; 
+}
+
+.zivotopis p {
+	padding-top: 0.3rem;
+	padding-left: 0.3rem; 
+}
+
+.line {
+	background: rgb(204, 204, 204); /* delici cara */
+	height: 1px; 
+	width: 100%; 
+	margin-top: 2.5rem;
+}
+
+
 /******************************************************************* 
  CLEARFIX
 ********************************************************************/
@@ -496,6 +545,10 @@ td {
 
 	.page-title ul li:first-child { /* odstraneni oddelovace */
 		border: none;
+	}
+
+	.zivotopis h2 {
+		text-align: left;
 	}
 
 	/* ------------------------------------------------------------------------------------------------ */
@@ -676,6 +729,23 @@ td {
 
 	.business-hours h2 {
 		margin-bottom: -0.4rem; /* zarovnani prvniho radku tabulky s ostatnim contentem */
+	}
+
+	.zivotopis {
+		width: 50%; 
+	}
+
+	.line {
+		display: none;
+	}
+
+	.zivotopis-jana {
+		padding-right: 1.5rem;
+	}
+
+	.zivotopis-jirina {
+		padding-left: 1.5rem; 
+		border-left: 1px solid rgb(204, 204, 204);
 	}
 }
 
