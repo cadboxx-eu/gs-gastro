@@ -504,7 +504,7 @@ td {
 	font-weight: bold;
 	font-size: 1rem; 
 	color: RGB(255, 255, 255); 
-	border-radius: 5px; 
+	border-radius: 8px; 
 	border: 1px solid RGB(29, 174, 236);
 	background-color: #49c0f0; background-image: -webkit-gradient(linear, left top, left bottom, from(#49c0f0), to(#2CAFE3));
 	 	background-image: -webkit-linear-gradient(top, #49c0f0, #2CAFE3);
