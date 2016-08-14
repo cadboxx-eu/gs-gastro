@@ -522,6 +522,60 @@ td {
 		background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#1ab0ec, endColorstr=#1a92c2);
 }
 
+
+
+/******************************************************************* 
+ PAGE CENIK
+********************************************************************/
+
+/* nastaveni okraju nahore a dole */
+.cenik {
+	padding: 1.5rem 0 2.5rem; 
+}
+
+/* hlavni text o pojistovnach vyraznejsi (modry, zarovnany na stred) */
+.cenik-text {
+	color: RGB(29, 174, 236);
+	font-weight: bolder;
+	font-size: 1rem; 
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.cenik-text p {
+	margin-bottom: 1rem;
+}
+
+/* design tabulky s nadstandardnimi sluzbami */
+.tab-cenik {
+	width: 100%; 
+	box-shadow: 0 0 8px rgba(200, 200, 200, 0.8);
+	border-radius: 5px; 
+	line-height: 1.2; 
+}
+
+.tab-cenik thead td {	/* hlavicka tabulky */
+	background-color: RGB(29, 174, 236);
+	color: rgb(255, 255, 255);
+	border-radius: 5px 5px 0 0; 
+}
+
+.tab-cenik td {
+	padding: 0.5rem; 
+}
+
+.tab-cenik tr:nth-child(even) { 	/* barevne odliseni jednotlivych radku */
+	background-color: RGB(235, 245, 255); 
+}
+
+.tab-cenik td:nth-child(n+2) { 	/* zarovnani ceny doprava */
+	text-align: right;
+}
+
+
+
+
+
 /******************************************************************* 
  CLEARFIX
 ********************************************************************/
@@ -728,6 +782,20 @@ td {
 		width: 65%; 
 		margin: 0 auto;
 		margin-top: 1.5rem;
+	}
+
+	/* ------------------------------------------------------------------------------------------------ */
+	/* Page Cenik aby nebylo tak roztahle */
+
+	.cenik-text {
+		text-align: left;
+		margin-bottom: 3rem;
+		
+	}
+
+	.tab-cenik {
+		max-width: 35rem; 
+		margin: 0 auto;
 	}
 }
 
