@@ -506,20 +506,14 @@ td {
 	color: RGB(255, 255, 255); 
 	border-radius: 8px; 
 	border: 1px solid RGB(29, 174, 236);
-	background-color: #49c0f0; background-image: -webkit-gradient(linear, left top, left bottom, from(#49c0f0), to(#2CAFE3));
-	 	background-image: -webkit-linear-gradient(top, #49c0f0, #2CAFE3);
-	 	background-image: -moz-linear-gradient(top, #49c0f0, #2CAFE3);
-	 	background-image: -ms-linear-gradient(top, #49c0f0, #2CAFE3);
-	 	background-image: -o-linear-gradient(top, #49c0f0, #2CAFE3);
-	 	background-image: linear-gradient(to bottom, #49c0f0, #2CAFE3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#49c0f0, endColorstr=#2CAFE3);
+
+	background-color: #49c0f0; 
+		background-image: linear-gradient(to bottom, #49c0f0, #2CAFE3);
 }
+
 .objednat .objednat-button:hover {
-	background-color: #1ab0ec; background-image: -webkit-gradient(linear, left top, left bottom, from(#1ab0ec), to(#1a92c2));
-		background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
-		background-image: -moz-linear-gradient(top, #1ab0ec, #1a92c2);
-		background-image: -ms-linear-gradient(top, #1ab0ec, #1a92c2);
-		background-image: -o-linear-gradient(top, #1ab0ec, #1a92c2);
-		background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#1ab0ec, endColorstr=#1a92c2);
+	background-color: #1ab0ec; 
+		background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2)
 }
 
 
@@ -574,6 +568,78 @@ td {
 
 
 
+/******************************************************************* 
+ PAGE FORMULAR
+********************************************************************/
+
+.formular {
+	background-color: RGB(235, 245, 255);
+}
+
+.formular form {
+	margin: 4rem auto 4rem;
+	width: 80%; 
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+
+.formular input, 
+.formular label, 
+.formular textarea {
+	display: block;
+	width: 100%; 
+	outline: none;
+}
+
+.formular .pole {
+	height: 2.8rem;
+	font-size: 1.2rem;
+	border-radius: 5px; 
+	border: none;
+	padding: 5px;
+	box-shadow: inset 2px 2px 3px rgba(204, 204, 204, 0.8);
+}
+
+.formular .pole:focus {
+	border: 3px solid rgba(29, 174, 236, 0.3);
+}
+
+.formular textarea.pole {
+	height: 8.4rem; 
+	resize: none;
+	
+}
+
+.formular label {
+	font-size: 1.2rem; 
+	font-weight: bold;
+	color: RGB(29, 174, 236);
+	margin: 2rem 0 0.6rem;
+}
+
+.formular button {
+	height: 2.6rem; 
+	width: 14rem; 
+	font-size: 1.2rem;
+	margin: 3rem 0 0 0;
+	font-weight: bold;
+	color: RGB(255, 255, 255); 
+	border-radius: 8px; 
+	border: 1px solid RGB(29, 174, 236);
+	background-color: #49c0f0; 
+	background-image: linear-gradient(to bottom, #49c0f0, #2CAFE3);
+}
+
+.formular button:hover {
+	background-color: #1ab0ec; 
+	background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2)
+}
+
+.formular form p {
+	font-size: 0.8rem;
+	margin-top: 0.4rem; 
+	color: rgb(160, 160, 160);
+}
 
 
 /******************************************************************* 
@@ -796,6 +862,18 @@ td {
 	.tab-cenik {
 		max-width: 35rem; 
 		margin: 0 auto;
+	}
+
+	/* ------------------------------------------------------------------------------------------------ */
+	/* Page Formular aby nebylo tak roztahle */
+
+	.formular form {
+		width: 60%; 
+		max-width: 35rem; 
+	}
+
+	.page-title #formular-heading {
+		text-align: center;
 	}
 }
 

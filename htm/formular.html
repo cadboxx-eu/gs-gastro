@@ -23,7 +23,7 @@
 
 	</head>
 	  
-	<body>
+	<body class="formular">
 		<div class="stick-foot">
 			<header> 
 				<div class="theme-pic"></div> <!-- obrazek na vrchu stranky, vlozeny na pozadi v css -->
@@ -55,9 +55,24 @@
 				</div> <!-- pruh s nazvem stranky - konec -->
 			</header>
 			
-			<section class="construction">
-				<p> Stránky jsou právě ve vývoji. Příbývají každým dnem :) </p>
-				<p> Děkujeme za pochopeni </p>
+			<section>
+				<form>
+					<label for="name"> Jméno a příjmení </label> 
+					<input type="text" id="name" name="name" class="pole">
+
+					<label for=""> E-mail </label>
+					<input type="email" id="email" name="email" class="pole"> 	
+
+					<label for="phone"> Telefon </label>
+					<input type="tel" id="phone" name="phone" class="pole"> 
+					
+					<label for="msg"> Vaše zpráva </label>
+					<textarea class="pole" rows="5" id="msg" name="msg" ></textarea>
+
+					<p> Všechny položky jsou povinné </p>
+
+					<button type="submit"> Odeslat </button>
+				</form>
 			</section>		
 		</div>
 
