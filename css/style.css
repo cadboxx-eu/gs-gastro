@@ -450,6 +450,78 @@ td {
 }
 
 
+
+/******************************************************************* 
+ PAGE KONTAKT
+********************************************************************/
+
+.map {
+	margin: 1.25rem 0 -1rem; 
+	width: 100%; 
+	height: 15rem; 
+}
+
+.contact-info h3 {
+	font-weight: bolder;
+	color: RGB(29, 174, 236);
+	margin: 2rem 0 0.5rem;
+}
+
+.contact-info p {
+	padding: 0.1rem 0; 
+}
+
+.contact-info .bus {
+	margin-top: 0.75rem; 
+	padding-top: 0.75rem; 
+	border-top: 1px solid rgb(204, 204, 204); 
+}
+
+.contact-info a:link, 
+.contact-info a:visited {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+} 
+.contact-info a:hover {
+	color: RGB(29, 174, 236);
+}
+
+.objednat {
+	margin: 1.5rem 0 0 0; 
+	padding: 1.5rem 0;
+	background-color: RGB(235, 245, 255);
+	line-height: 1.2;
+	clear: both;
+}
+
+.objednat .objednat-button {
+	display: block;
+	width: 100%; 
+	padding: 0.75rem;
+	margin-top: 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1rem; 
+	color: RGB(255, 255, 255); 
+	border-radius: 5px; 
+	border: 1px solid RGB(29, 174, 236);
+	background-color: #49c0f0; background-image: -webkit-gradient(linear, left top, left bottom, from(#49c0f0), to(#2CAFE3));
+	 	background-image: -webkit-linear-gradient(top, #49c0f0, #2CAFE3);
+	 	background-image: -moz-linear-gradient(top, #49c0f0, #2CAFE3);
+	 	background-image: -ms-linear-gradient(top, #49c0f0, #2CAFE3);
+	 	background-image: -o-linear-gradient(top, #49c0f0, #2CAFE3);
+	 	background-image: linear-gradient(to bottom, #49c0f0, #2CAFE3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#49c0f0, endColorstr=#2CAFE3);
+}
+.objednat .objednat-button:hover {
+	background-color: #1ab0ec; background-image: -webkit-gradient(linear, left top, left bottom, from(#1ab0ec), to(#1a92c2));
+		background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
+		background-image: -moz-linear-gradient(top, #1ab0ec, #1a92c2);
+		background-image: -ms-linear-gradient(top, #1ab0ec, #1a92c2);
+		background-image: -o-linear-gradient(top, #1ab0ec, #1a92c2);
+		background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#1ab0ec, endColorstr=#1a92c2);
+}
+
 /******************************************************************* 
  CLEARFIX
 ********************************************************************/
@@ -628,6 +700,34 @@ td {
 		position: fixed;
 		right: -2rem; 
 		top: 60%; 
+	}
+
+	/* ------------------------------------------------------------------------------------------------ */
+	/* Page Kontakt 2-columns layout */
+
+	.g-map {
+		float: left;
+		width: 60%; 
+		padding-right: 1rem;
+		padding-top: 0;
+		margin-bottom: 2rem; 
+	}
+
+	.contact-info {
+		float: right;
+		width: 40%; 
+		padding-left: 1rem;
+		padding-top: 0;
+	}
+
+	.map {
+		height: 20.5rem; 
+	}
+
+	.objednat .objednat-button {
+		width: 65%; 
+		margin: 0 auto;
+		margin-top: 1.5rem;
 	}
 }
 
