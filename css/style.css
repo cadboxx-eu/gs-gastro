@@ -574,12 +574,12 @@ td {
 
 .formular {
 	background-color: RGB(235, 245, 255);
+	padding: 2rem 0 4rem; 
 }
 
 .formular form {
-	margin: 4rem auto 4rem;
+	margin: 0 auto;
 	width: 80%; 
-	/*border: 1px solid red;*/
 	text-align: center;
 }
 
@@ -873,6 +873,10 @@ td {
 	}
 
 	.page-title #formular-heading {
+		text-align: center;
+	}
+
+	.page-title .center-header {
 		text-align: center;
 	}
 }
