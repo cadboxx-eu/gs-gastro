@@ -12,7 +12,7 @@
 }
 
 
-/************************************************************************************ 
+/************************************************************************************
  GENERAL
 *************************************************************************************/
 
@@ -27,7 +27,7 @@
 }
 
 html {
-	font-size: 16px; 
+	font-size: 16px;
 }
 
 body {
@@ -51,7 +51,7 @@ strong {
 }
 
 /* obecne odkazy v textu, sede, s podtrzenim */
-a:link, 
+a:link,
 a:visited {
 	color: RGB(120, 120, 120);
 }
@@ -64,16 +64,16 @@ a:hover {
 	min-height: calc(100vh - 216.19px);
 }
 
-/************************************************************************************ 
+/************************************************************************************
  HEADER
 *************************************************************************************/
 
-/* <header> obsahuje: 
-	.theme-pic  /obrazek  
-	.top-banner  /bily pruh s logem a navigaci  
+/* <header> obsahuje:
+	.theme-pic  /obrazek
+	.top-banner  /bily pruh s logem a navigaci
 		.logo  /logo s img a span
-		<nav>  /navigace s ul a li 
-	.page-title  /modry pruh s nazvem stranky 
+		<nav>  /navigace s ul a li
+	.page-title  /modry pruh s nazvem stranky
 		h1  /nazev
 		ul,li  /jmena lekarek */
 
@@ -84,15 +84,15 @@ header {
 /* obrazek na vrchu stranky, vlozen jako background kvuli orezu */
 
 .theme-pic {
-	width: 100%; 
-	height: 17.5rem; 
+	width: 100%;
+	height: 17.5rem;
 	background: url(../pic/health-pic.jpg) no-repeat center / cover;
 }
 
 .top-banner { /* pruh s logem a navigaci */
-	width: 100%; 
-	background: rgba(255, 255, 255, 0.85); 
-	padding-top: 0.9375rem; 
+	width: 100%;
+	background: rgba(255, 255, 255, 0.85);
+	padding-top: 0.9375rem;
 	position: absolute;
 	top: 0;
 	color: #235779;
@@ -103,13 +103,13 @@ header {
 /* ------------------ Logo ------------------ */
 
 .logo img { /* logo obrazek */
-	width: 2.5rem; 
+	width: 2.5rem;
 }
 
 .logo span { /* logo text */
-	font-size: 1.2rem; 
+	font-size: 1.2rem;
 	font-weight: bold;
-	color: #235779; 
+	color: #235779;
 	position: relative; /* umisteni vuci obrazku v logu */
 	bottom: 0.8rem;
 	left: 0.125px;
@@ -131,17 +131,17 @@ nav ul {
 }
 
 nav li {
-	display: inline-block;	
+	display: inline-block;
 }
 
 nav ul:after {
-	content: ""; 
-	width: 100%; 
+	content: "";
+	width: 100%;
 	display: inline-block;
 }
 
 /* stylovani odkazu v navigaci */
-nav a:link, 
+nav a:link,
 nav a:visited {
 	text-decoration: none;
 	color: rgb(0, 41, 96);
@@ -150,11 +150,11 @@ nav a:hover {
 	color: rgb(0, 173, 239);
 }
 
-nav .active:link, 
-nav .active:visited, 
+nav .active:link,
+nav .active:visited,
 nav .active:hover {
 	color: rgb(0, 173, 239);
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 
@@ -163,9 +163,9 @@ nav .active:hover {
 
 .page-title {
 	background-color: rgba(3, 43, 94, 0.85);
-	width: 100%; 
+	width: 100%;
 	position: absolute; /* pozicovani na dno obrazku */
-	bottom: 0; 
+	bottom: 0;
 	text-align: center;
 	padding: 0.5rem 0;
 	color: rgb(255, 255, 255);
@@ -173,7 +173,7 @@ nav .active:hover {
 
 h1 {
 	font-weight: bold;
-	font-size: 1.2rem; 
+	font-size: 1.2rem;
 }
 
 .page-title li {
@@ -187,8 +187,8 @@ h1 {
 	border-right: 1px solid rgb(255, 255, 255); /* oddelovac */
 }
 
-.page-title a:link, 
-.page-title a:visited, 
+.page-title a:link,
+.page-title a:visited,
 .page-title a:hover {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
@@ -196,7 +196,7 @@ h1 {
 
 
 
-/************************************************************************************ 
+/************************************************************************************
  MAIN CONTENT
 *************************************************************************************/
 
@@ -204,12 +204,12 @@ h2 {
 	margin-bottom: 0.8rem;
 }
 
-.welcome, 
+.welcome,
 .business-hours {
 	background-color: RGB(235, 245, 255); /* svetle modre pozadi */
 }
 
-.col, 
+.col,
 .news {
 	padding: 0.9375rem 0 0.9375rem;
 	line-height: 1.3; /* rozestupy mezi jednotlivymi aktualitami */
@@ -230,7 +230,7 @@ p {
 	top: -1px;
 }
 
-.news-1 .drop-pic, 
+.news-1 .drop-pic,
 .news-3 .drop-pic {
 	transform: rotate(0deg);
 	right: 0;
@@ -239,11 +239,11 @@ p {
 
 /* ------------------ Nastaveni rozdilne barvy u car s kapkami ------------------ */
 
-.news-1, 
+.news-1,
 .news-4 {
 	border-top: 2px solid RGB(156, 209, 237);
 }
-.news-1 .drop-pic, 
+.news-1 .drop-pic,
 .news-4 .drop-pic {
 	background-color: RGB(156, 209, 237);
 }
@@ -273,14 +273,14 @@ p {
 	top: -0.3125rem;
 }
 
-.news-2 p, 
+.news-2 p,
 .news-4 p {
-	padding-left: 1.875rem; 
+	padding-left: 1.875rem;
 }
 
-.news-1 p, 
+.news-1 p,
 .news-3 p {
-	padding-right: 1.875rem; 
+	padding-right: 1.875rem;
 }
 
 .news-4 ul {
@@ -310,7 +310,7 @@ thead th {
 
 td {
 	height: 1.5rem;
-	width: 6rem; 
+	width: 6rem;
 }
 
 
@@ -340,7 +340,7 @@ td {
 }
 
 
-/************************************************************************************ 
+/************************************************************************************
  IKONY NABIZIME
 *************************************************************************************/
 
@@ -351,7 +351,7 @@ td {
 	padding-bottom: 0.9375rem;
 }
 
-.service-nav a:link, 
+.service-nav a:link,
 .service-nav a:visited {
 		color: rgb(255, 255, 255);
 		text-decoration: none;
@@ -375,26 +375,26 @@ td {
 	margin: 1.25rem 4.16666% 0;
 }
 
-.service-icon:nth-child(4) { 
+.service-icon:nth-child(4) {
 	margin-left: 20.5%;	/* vystredeni poslednich 2 ikon */
-	
+
 }
 
-/************************************************************************************ 
+/************************************************************************************
  FOOTER (COPYRIGHT)
 *************************************************************************************/
 
 .copyright {
 	background-color: RGB(3, 43, 94);
 	width: 100%;
-	padding: 0.75rem 0 0.5rem; 
+	padding: 0.75rem 0 0.5rem;
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-size: 0.7rem;
 	letter-spacing: 0.04rem;
 }
 
-.copyright a:link, 
+.copyright a:link,
 .copyright a:visited {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
@@ -402,15 +402,15 @@ td {
 
 
 
-/******************************************************************* 
+/*******************************************************************
  PAGE O NAS
 ********************************************************************/
 .zivotopis {
-	margin-bottom: 1rem; 
+	margin-bottom: 1rem;
 	margin-top: 2rem;
 }
 .tab-zivotopis {
-	width: 100%; 
+	width: 100%;
 	table-layout: fixed;
 	margin-bottom: 0.5rem;
 }
@@ -421,44 +421,48 @@ td {
 }
 
 .tab-zivotopis td {
-	padding: 0.3rem; 
+	padding: 0.3rem;
 }
 
 .tab-zivotopis td:first-child {
-	width: 40px; 
+	width: 40px;
 }
 
 .tab-zivotopis li {
-	padding: 0.3rem 0.3rem 0.3rem 1.5rem; 
+	padding: 0.3rem 0.3rem 0.3rem 1.5rem;
 	border-top: 1px solid rgb(235, 245, 255);
 }
 
 .zivotopis h2 {
-	margin: 0 0 1rem; 
+	margin: 0 0 1rem;
 }
 
 .zivotopis p {
 	padding-top: 0.3rem;
-	padding-left: 0.3rem; 
+	padding-left: 0.3rem;
 }
 
 .line {
 	background: rgb(204, 204, 204); /* delici cara */
-	height: 1px; 
-	width: 100%; 
+	height: 1px;
+	width: 100%;
 	margin-top: 2.5rem;
+}
+
+.cv-list li {
+	padding-left: 0;
 }
 
 
 
-/******************************************************************* 
+/*******************************************************************
  PAGE KONTAKT
 ********************************************************************/
 
 .map {
-	margin: 1.25rem 0 -1rem; 
-	width: 100%; 
-	height: 15rem; 
+	margin: 1.25rem 0 -1rem;
+	width: 100%;
+	height: 15rem;
 }
 
 .contact-info h3 {
@@ -468,26 +472,26 @@ td {
 }
 
 .contact-info p {
-	padding: 0.1rem 0; 
+	padding: 0.1rem 0;
 }
 
 .contact-info .bus {
-	margin-top: 0.75rem; 
-	padding-top: 0.75rem; 
-	border-top: 1px solid rgb(204, 204, 204); 
+	margin-top: 0.75rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid rgb(204, 204, 204);
 }
 
-.contact-info a:link, 
+.contact-info a:link,
 .contact-info a:visited {
 	text-decoration: none;
 	color: rgb(0, 0, 0);
-} 
+}
 .contact-info a:hover {
 	color: RGB(29, 174, 236);
 }
 
 .objednat {
-	margin: 1.5rem 0 0 0; 
+	margin: 1.5rem 0 0 0;
 	padding: 1.5rem 0;
 	background-color: RGB(235, 245, 255);
 	line-height: 1.2;
@@ -496,42 +500,42 @@ td {
 
 .objednat .objednat-button {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	padding: 0.75rem;
 	margin-top: 1.5rem;
 	text-align: center;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 1rem; 
-	color: RGB(255, 255, 255); 
-	border-radius: 8px; 
+	font-size: 1rem;
+	color: RGB(255, 255, 255);
+	border-radius: 8px;
 	border: 1px solid RGB(29, 174, 236);
 
-	background-color: #49c0f0; 
+	background-color: #49c0f0;
 		background-image: linear-gradient(to bottom, #49c0f0, #2CAFE3);
 }
 
 .objednat .objednat-button:hover {
-	background-color: #1ab0ec; 
+	background-color: #1ab0ec;
 		background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2)
 }
 
 
 
-/******************************************************************* 
+/*******************************************************************
  PAGE CENIK
 ********************************************************************/
 
 /* nastaveni okraju nahore a dole */
 .cenik {
-	padding: 1.5rem 0 2.5rem; 
+	padding: 1.5rem 0 2.5rem;
 }
 
 /* hlavni text o pojistovnach vyraznejsi (modry, zarovnany na stred) */
 .cenik-text {
 	color: RGB(29, 174, 236);
 	font-weight: bolder;
-	font-size: 1rem; 
+	font-size: 1rem;
 	text-align: center;
 	margin-bottom: 2rem;
 }
@@ -542,24 +546,24 @@ td {
 
 /* design tabulky s nadstandardnimi sluzbami */
 .tab-cenik {
-	width: 100%; 
+	width: 100%;
 	box-shadow: 0 0 8px rgba(200, 200, 200, 0.8);
-	border-radius: 5px; 
-	line-height: 1.2; 
+	border-radius: 5px;
+	line-height: 1.2;
 }
 
 .tab-cenik thead td {	/* hlavicka tabulky */
 	background-color: RGB(29, 174, 236);
 	color: rgb(255, 255, 255);
-	border-radius: 5px 5px 0 0; 
+	border-radius: 5px 5px 0 0;
 }
 
 .tab-cenik td {
-	padding: 0.5rem; 
+	padding: 0.5rem;
 }
 
 .tab-cenik tr:nth-child(even) { 	/* barevne odliseni jednotlivych radku */
-	background-color: RGB(235, 245, 255); 
+	background-color: RGB(235, 245, 255);
 }
 
 .tab-cenik td:nth-child(n+2) { 	/* zarovnani ceny doprava */
@@ -568,33 +572,33 @@ td {
 
 
 
-/******************************************************************* 
+/*******************************************************************
  PAGE FORMULAR
 ********************************************************************/
 
 .formular {
 	background-color: RGB(235, 245, 255);
-	padding: 2rem 0 4rem; 
+	padding: 2rem 0 4rem;
 }
 
 .formular form {
 	margin: 0 auto;
-	width: 80%; 
+	width: 80%;
 	text-align: center;
 }
 
-.formular input, 
-.formular label, 
+.formular input,
+.formular label,
 .formular textarea {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	outline: none;
 }
 
 .formular .pole {
 	height: 2.8rem;
 	font-size: 1.2rem;
-	border-radius: 5px; 
+	border-radius: 5px;
 	border: none;
 	padding: 5px;
 	box-shadow: inset 2px 2px 3px rgba(204, 204, 204, 0.8);
@@ -605,60 +609,60 @@ td {
 }
 
 .formular textarea.pole {
-	height: 8.4rem; 
+	height: 8.4rem;
 	resize: none;
-	
+
 }
 
 .formular label {
-	font-size: 1.2rem; 
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: RGB(29, 174, 236);
 	margin: 2rem 0 0.6rem;
 }
 
 .formular button {
-	height: 2.6rem; 
-	width: 14rem; 
+	height: 2.6rem;
+	width: 14rem;
 	font-size: 1.2rem;
 	margin: 3rem 0 0 0;
 	font-weight: bold;
-	color: RGB(255, 255, 255); 
-	border-radius: 8px; 
+	color: RGB(255, 255, 255);
+	border-radius: 8px;
 	border: 1px solid RGB(29, 174, 236);
-	background-color: #49c0f0; 
+	background-color: #49c0f0;
 	background-image: linear-gradient(to bottom, #49c0f0, #2CAFE3);
 }
 
 .formular button:hover {
-	background-color: #1ab0ec; 
+	background-color: #1ab0ec;
 	background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2)
 }
 
 .formular form p {
 	font-size: 0.8rem;
-	margin-top: 0.4rem; 
+	margin-top: 0.4rem;
 	color: rgb(160, 160, 160);
 }
 
 
-/******************************************************************* 
+/*******************************************************************
  CLEARFIX
 ********************************************************************/
 
 .clearfix::after {
-	content: ""; 
+	content: "";
 	display: table;
 	clear: both;
 }
 
 
-/******************************************************************* 
+/*******************************************************************
  MEDIA QUERIES
 ********************************************************************/
 
 @media (max-width: 300px) {
-	
+
 	html {
 		font-size: 12px;
 	}
@@ -679,23 +683,23 @@ td {
 @media (min-width: 600px) {
 
 	.middle-container { /* zvetseni okraju kolem obsahu */
-		width: 85%; 
+		width: 85%;
 		margin: 0 auto;
 	}
 
 	.theme-pic {
 		height: 21.875rem; /* uprava vysky uvodniho obrazku */
 	}
-	
+
 	/* ------------------------------------------------------------------------------------------------ */
 	/* Hlavni navigace floatuje v pravo */
 
 	nav {
-		width: 50%; 
+		width: 50%;
 		max-width: 19rem; /* uprava roztazeni navigace, aby nebyla rozplizla */
 		position: absolute;
 		top: 0.75rem;
-		right: 7.5%; 
+		right: 7.5%;
 	}
 
 	.top-banner {
@@ -713,21 +717,21 @@ td {
 	/* ------------------------------------------------------------------------------------------------ */
 	/* Nadpis stranky, absolutni pozicovani */
 
-	.page-title {  
+	.page-title {
 		text-align: left;
 		height: 3.421rem; /* vyska nadpisoveho banneru */
 	}
 
 	.page-title h1 {
-		text-align: left;	
+		text-align: left;
 		position: absolute;
-		left: 7.5%; 
+		left: 7.5%;
 		bottom: 1.05rem; /* nadpis */
 	}
 
 	.page-title ul {
 		position: absolute;
-		right: 7.5%; 
+		right: 7.5%;
 		bottom: 0.68rem; /* jmena lekarek */
 	}
 
@@ -751,14 +755,14 @@ td {
 		float: left;
 		width: 30%;
 		background-color: rgb(255, 255, 255); /* bile pozadi*/
-		padding: 0 1rem 0 0; 
-		margin: 0.9375rem 0 0.9375rem 0; 
+		padding: 0 1rem 0 0;
+		margin: 0.9375rem 0 0.9375rem 0;
 	}
 
 	.news-all {
 		float: right;
 		width: 70%;
-		padding: 0 0 0 1rem; 
+		padding: 0 0 0 1rem;
 		border-left: 1px solid RGB(204, 204, 204); /* oddelovaci cara */
 		margin: 0.9375rem 0 0.9375rem 0;
 	}
@@ -769,14 +773,14 @@ td {
 
 	/* opraveni zarovnani na strance */
 	.two-col-container {
-		width: 85%; 
+		width: 85%;
 		margin: 0 auto;
 	}
 
-	.welcome .middle-container, 
+	.welcome .middle-container,
 	.news-all .middle-container {
 		margin: 0;
-		width: 100%; 
+		width: 100%;
 	}
 
 
@@ -784,11 +788,11 @@ td {
 	/* Ikony se sluzbami - roztahnuti do jednoho pruhu */
 
 	.service-icon {
-		width: 15%; 
-		margin: 1.25rem 2.5% 0; 
+		width: 15%;
+		margin: 1.25rem 2.5% 0;
 	}
 
-	.service-icon:nth-child(4) { 
+	.service-icon:nth-child(4) {
 		margin: 1.25rem 2.5% 0; 	/* korekce z layoutu o 3 ikonach */
 	}
 
@@ -796,7 +800,7 @@ td {
 		max-width: 100px;
 	}
 
-	
+
 
 	/* Ordinacni hodiny v ramci sekce do 2 sloupcu */
 	.jana {
@@ -818,8 +822,8 @@ td {
 
 	.button-objednat {
 		position: fixed;
-		right: -2rem; 
-		top: 60%; 
+		right: -2rem;
+		top: 60%;
 	}
 
 	/* ------------------------------------------------------------------------------------------------ */
@@ -827,25 +831,25 @@ td {
 
 	.g-map {
 		float: left;
-		width: 60%; 
+		width: 60%;
 		padding-right: 1rem;
 		padding-top: 0;
-		margin-bottom: 2rem; 
+		margin-bottom: 2rem;
 	}
 
 	.contact-info {
 		float: right;
-		width: 40%; 
+		width: 40%;
 		padding-left: 1rem;
 		padding-top: 0;
 	}
 
 	.map {
-		height: 20.5rem; 
+		height: 20.5rem;
 	}
 
 	.objednat .objednat-button {
-		width: 65%; 
+		width: 65%;
 		margin: 0 auto;
 		margin-top: 1.5rem;
 	}
@@ -856,11 +860,11 @@ td {
 	.cenik-text {
 		text-align: left;
 		margin-bottom: 3rem;
-		
+
 	}
 
 	.tab-cenik {
-		max-width: 35rem; 
+		max-width: 35rem;
 		margin: 0 auto;
 	}
 
@@ -868,8 +872,8 @@ td {
 	/* Page Formular aby nebylo tak roztahle */
 
 	.formular form {
-		width: 60%; 
-		max-width: 35rem; 
+		width: 60%;
+		max-width: 35rem;
 	}
 
 	.page-title #formular-heading {
@@ -885,11 +889,11 @@ td {
 
 	/* uprava velikosti fontu top banneru */
 	.logo img { /* logo obrazek */
-		width: 3rem; 
+		width: 3rem;
 	}
 
 	.logo span { /* logo text */
-	font-size: 1.5rem; 
+	font-size: 1.5rem;
 	}
 
 	nav {
@@ -928,10 +932,10 @@ td {
 	/* Uprava headeru */
 
 	.theme-pic {
-		height: 24rem; 
+		height: 24rem;
 	}
 
-	
+
 	/* ------------------------------------------------------------------------------------------------ */
 	/* 3 column layout */
 
@@ -946,7 +950,7 @@ td {
 	/* nastaveni sirky sloupcu, okraju a ohraniceni */
 	.news-all {
 		width: 50%;
-		padding-right: 1rem; 
+		padding-right: 1rem;
 		border-right: 1px solid	rgb(204, 204, 204);
 	}
 
@@ -960,12 +964,12 @@ td {
 
 	.business-hours table { /* zruseni sloupcu u business hours */
 		float: none;
-		width: 100%; 
+		width: 100%;
 	}
 
 	.two-col-container { /* zruseni vystredeni 2-col layoutu */
-		width: 100%; 
-		margin: 0; 
+		width: 100%;
+		margin: 0;
 	}
 
 	h2 {
@@ -973,7 +977,7 @@ td {
 	}
 
 	.three-col-container { /* vystredeni 3-col layoutu */
-		width: 85%; 
+		width: 85%;
 		margin: 0 auto;
 	}
 
@@ -982,7 +986,7 @@ td {
 	}
 
 	.zivotopis {
-		width: 50%; 
+		width: 50%;
 	}
 
 	.line {
@@ -994,17 +998,17 @@ td {
 	}
 
 	.zivotopis-jirina {
-		padding-left: 1.5rem; 
+		padding-left: 1.5rem;
 		border-left: 1px solid rgb(204, 204, 204);
 	}
 }
 
 @media (min-width: 1400px) {
-	
+
 	body {
-		max-width: 1400px; 
+		max-width: 1400px;
 		margin: 0 auto;
-		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.2); 
+		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.2);
 	}
 
 	/* tlacitko objednat */
