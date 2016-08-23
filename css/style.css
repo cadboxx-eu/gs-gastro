@@ -367,6 +367,7 @@ td {
 .caption {
 	font-size: 0.8rem;
 	font-size: 3.2vw; /* osetreni vystredeni titulku pri malem monitoru */
+	line-height: 1.2;
 }
 
 .service-icon {
@@ -377,8 +378,8 @@ td {
 
 .service-icon:nth-child(4) {
 	margin-left: 20.5%;	/* vystredeni poslednich 2 ikon */
-
 }
+
 
 /************************************************************************************
  FOOTER (COPYRIGHT)
