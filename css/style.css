@@ -692,6 +692,12 @@ td {
 	list-style-type: decimal;
 }
 
+.screening {
+	/*border-top: 2px solid rgb(38, 101, 148);*/
+	padding: 1px 0;
+	background: rgb(235, 245, 255); 
+}
+
 
 
 /*******************************************************************
