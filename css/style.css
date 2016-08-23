@@ -647,6 +647,53 @@ td {
 
 
 /*******************************************************************
+ NABIZENE SLUZBY
+********************************************************************/
+.icon-small {
+	display: none;
+}
+
+.text h2 {
+	margin-top: 2rem; 
+}
+
+.text h3 {
+	font-weight: bold;
+	color: RGB(38, 101, 148);
+	margin: 1rem 0 0.5rem; 
+}
+
+.text h3 ~ p {
+	padding-left: 1.1rem; 
+}
+.text .del-padding {
+	padding-left: 0; 
+}
+
+.text .top-margin-up {
+	margin-top: 1.5rem;
+}
+
+.text {
+	padding-bottom: 2rem; 
+	line-height: 1.2; 
+}
+
+.text p {
+	margin: 0 0 0.4rem 0;
+}
+
+.text ol {
+	margin-left: 2.2rem; 
+}
+
+.text ol li {
+	list-style-type: decimal;
+}
+
+
+
+/*******************************************************************
  CLEARFIX
 ********************************************************************/
 
@@ -743,7 +790,8 @@ td {
 		border: none;
 	}
 
-	.zivotopis h2 {
+	.zivotopis h2,
+	.text h2 {
 		text-align: left;
 	}
 
