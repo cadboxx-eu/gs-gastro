@@ -11,8 +11,6 @@
             $tel_val = $tel_input.val(),
             $info_input = $('#msg'),
             $info_val = $info_input.val(),
-            $error_msg = $('#error-msg'),
-            $form_wrapper = $('.formular'),
             invalid_email;
 
         if ($name_val === '') {
@@ -54,7 +52,8 @@
                     alert('Omlouváme se, při odesílání došlo k chybě, zkuste to prosím znovu. Pokud by chyba přetrvávala tak to zkuste později nebo využijte objednání po telefonu.');
                 },
                 success: function () {
-                    $form_wrapper.html('<span>Děkujeme, formulář byl úspěšně odeslán. Naše sestřička vás bude brzy kontaktovat pro domluvení termínu Vaší návštěvy.');
+                    alert('Děkujeme, formulář byl úspěšně odeslán. Naše sestřička vás bude brzy kontaktovat pro domluvení termínu Vaší návštěvy.');
+                    window.location.href = 'http://www.gsgastro.cz'
                 }
             });
         }
