@@ -444,7 +444,6 @@ td {
 
 .tab-zivotopis li {
 	padding: 0.3rem 0.3rem 0.3rem 1.5rem;
-	border-top: 1px solid rgb(235, 245, 255);
 }
 
 .zivotopis h2 {
@@ -1068,6 +1067,12 @@ td {
 	.zivotopis-jirina {
 		padding-left: 1.5rem;
 		border-left: 1px solid rgb(204, 204, 204);
+	}
+
+	.zivotopis-sestra {
+		width: 100%;
+		padding-top: 1.5rem;
+		border-top: 1px solid rgb(204, 204, 204);
 	}
 }
 
