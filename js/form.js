@@ -41,7 +41,7 @@
         if ($name_val !== '' && !invalid_email && $tel_val !== '' && $info_val !== '') {
             $.ajax({
                 method: "POST",
-                url: '/send',
+                url: '/',
                 data: {
                     name: $name_val,
                     email: $email_val,
